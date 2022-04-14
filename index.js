@@ -16,7 +16,7 @@ app.get('/', (req, res) => {
             Password: req.headers.password
         }
 
-        fetch('https://portal.microdeb.se:44396/api/v1/login/194699f3-1f9e-47a4-8052-df26df0bc114/mps', {
+        fetch('http://portal.microdeb.se:44396/api/v1/login/194699f3-1f9e-47a4-8052-df26df0bc114/mps', {
             body: JSON.stringify(credentials),
             method: 'POST',
             headers: { 'Content-Type': 'application/json' }
