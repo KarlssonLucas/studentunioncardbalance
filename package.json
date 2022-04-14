@@ -1,6 +1,12 @@
 {
   "name": "studentunioncardbalance",
   "type": "module",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.js",
+    "heroku-postbuild": "npm install --legacy-peer-deps && node index.js"
+  },
   "dependencies": {
     "express": "^4.17.3",
     "node-fetch": "^3.2.3"
